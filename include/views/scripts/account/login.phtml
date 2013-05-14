@@ -1,0 +1,38 @@
+<?php 
+$errors = $this->errors;
+$username = $this->username;
+$redirect = $this->redirect;
+echo $this->render('header.phtml'); ?>
+
+<form method="post" action="/account/login">
+
+	<fieldset>	
+	
+		<input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+		
+		<legend>Accedi al tuo account</legend>
+		
+		<div class="row" id="form_username_container">
+			<label for="form_username">Username:</label>
+			<input type="text" name="username" id="form_username" value="<?php echo $username; ?>" />
+			<?php echo $this->partial('lib/error.phtml', array('error' => $errors, 'chiave' => 'username')); ?>			
+		</div>
+		
+		<div class="row" id="form_password_container">
+			<label for="form_password">Password:</label>
+			<input type="password" name="password" id="form_password" value="" />
+			<?php echo $this->partial('lib/error.phtml', array('error' => $errors, 'chiave' => 'password')); ?>			
+		</div>
+		
+		<div class="submit">
+			<input type="submit" value="Login" />
+		</div>
+		
+		<br /><br />
+		<p>Hai dimenticato la password? <a href="/account/recupero-password">Recupera password</a></p>
+				
+	</fieldset>	
+</form>
+
+
+<?php echo $this->render('footer.phtml'); ?>

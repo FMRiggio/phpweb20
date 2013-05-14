@@ -1,0 +1,7 @@
+<?php echo $this->render('header.phtml'); ?>
+<h1>Benvenuto <?php echo $this->identity->nome; ?></h1>
+<ul>
+	<li><a href="<?php echo $this->geturl(array('controller' => 'blogmanager'));?>">Guarda tutti i post del blog</a></li>
+	<li><a href="<?php echo $this->geturl(array('controller' => 'blogmanager', 'action' => 'edit'));?>">Aggiungi un post</a></li>
+</ul>
+<?php echo $this->render('footer.phtml'); ?>

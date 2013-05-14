@@ -1,0 +1,87 @@
+<?php
+$config = Zend_Registry::get('config');
+echo $this->render('header.phtml'); 
+
+$fp = $this->fp;
+
+
+?>
+
+<form method="post" action="/account/details">
+<fieldset>
+	<legend>Aggiorna i tuoi dati</legend>
+
+	<div class="error" <?php if (!$this->fp->hasError()) { echo 'style="display:none;"'; } ?>>
+		Si � verificato un errore nel form sottostante.<br/>
+		Si prega di verificare i campi evidenziati e di reinviare il form.
+	</div>
+	
+	<div class="row" id ="form_email_container">
+		<label for="form_email">Email utente:</label>
+		<input type="text" id="form_email" name="email" value="<?php echo $this->fp->email; ?>" />
+		<?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('email'))); ?>			
+	</div>	
+	
+	<div class="row" id ="form_nome_container">
+		<label for="form_nome">Nome:</label>
+		<input type="text" id="form_nome" name="nome" value="<?php echo $this->fp->nome; ?>" />
+		<?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('nome'))); ?>			
+	</div>
+	
+	<div class="row" id ="form_cognome_container">
+		<label for="form_cognome">Cognome:</label>
+		<input type="text" id="form_cognome" name="cognome" value="<?php echo $this->fp->cognome; ?>" />
+		<?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('cognome'))); ?>		
+	</div>		
+
+    <div class="row" id="form_password_container">
+        <label for="form_password">Password:</label>
+        <input type="password" id="form_password" name="password" value="<?php echo $this->fp->password; ?>" />
+        <?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('password'))); ?>
+    </div>
+
+    <div class="row" id="form_password_confirm_container">
+        <label for="form_password_confirm">Riscrivi password:</label>
+        <input type="password" id="form_password_confirm" name="password_confirm" value="<?php echo $this->fp->password_confirm; ?>" />
+        <?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('password_confirm'))); ?>
+    </div>
+
+</fieldset>
+
+<fieldset>
+	<legend>Impostazioni Account</legend>
+	<dl>
+		<dt>Quanti post nel blog vuoi visualizzare nella tua home page?</dt>
+		<dd><input type="text" name="num_posts" value="<?php echo $this->fp->num_posts; ?>" /></dd>
+		<dt>Vuoi visualizzare i post del tuo blog nella home page del sito web?</dt>
+		<dd>
+			<select name="blog_public">
+				<option value="0" <?php if (!$this->fp->blog_public) { echo 'selected="selected"'; }?>>No</option>
+				<option value="1" <?php if ($this->fp->blog_public) { echo 'selected="selected"'; }?>>Sì</option>
+			</select>
+		</dd>
+	</dl>
+</fieldset>
+
+<fieldset>
+	<legend>Profilo Pubblico</legend>
+	
+	<?php 
+		foreach ($this->fp->publicProfile as $key => $label) {
+			echo '<div class="row" id="form_' . $key . '_container">';
+			echo '<label for="form_' . $key . '">' . $label . ':</label>';
+			echo '<input type="text" id="form_' . $key . '" maxlength="255" ';
+			echo 'name="' . $key . '" value="' . $this->fp->$key . '" />';
+			echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError($key)));
+			echo '</div>';
+		}
+	?>
+
+</fieldset>
+
+<div class="submit">
+	<input type="submit" value="Salva i Nuovi Dati" />
+</div>
+</form>
+
+<?php echo $this->render('footer.phtml'); ?>

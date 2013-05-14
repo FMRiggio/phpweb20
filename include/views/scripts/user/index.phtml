@@ -1,0 +1,32 @@
+<?php
+$url = $this->geturl(array(
+						'route' 	=> 'user',
+						'username'  => $this->user->username,
+						'action'	=> 'feed')); 
+
+echo $this->partial('header.phtml', array('feedTitle' => ("Blog di " . $this->user->username),
+										  'feedUrl'	  => $url,
+										  'titolo'	  => "Blog di " . $this->user->username
+)); 
+
+
+if (count($this->posts) == 0) {?>
+	<p>Nessun post del blog trovato per questo utente.</p>
+<?php } else { ?>
+	<dl>
+		<?php 
+			
+			foreach ($this->posts as $post) {
+				echo $this->partial('user/lib/blog-post-summary.phtml', array(
+																	'user' => $this->user,
+																	'post' => $post));
+			}
+		?>
+	</dl>
+<?php 
+	echo $this->partial('footer.phtml', array('id_utente' 	=> $this->user->getId(), 
+											  'username' 	=> $this->user->username, 
+											  'leftColumn'	=> 'user/lib/left-column.phtml', 
+											  'rightColumn' => 'user/lib/right-column.phtml')); 
+}
+?>

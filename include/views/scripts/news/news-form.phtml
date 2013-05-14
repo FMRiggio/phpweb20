@@ -1,0 +1,24 @@
+<?php echo $this->render('header.phtml'); ?>
+<p class="errore"><?php echo $this->escape($this->errorMsg)?></p>
+<form action="" method="post">
+	<fieldset>
+	<legend>Dati della news</legend>
+	    <p><label>Autore*:<br />
+	        <?php echo $this->formText('autore', $this->news['autore'], array('class'=>'inputForm')) ?>
+	    </label></p>
+	    <p><label>Titolo*:<br />
+	        <?php echo $this->formText('titolo', $this->news['titolo'], array('class'=>'inputForm')) ?>
+	    </label></p>
+	    <p><label>Testo introduttivo*:<br />
+	        <?php echo $this->formTextarea('testo_intro', $this->news['testo_intro'],array('rows' => 5,'cols'=>50)) ?>
+	    </label></p>
+	    <p><label>Testo completo:<br />
+	        <?php echo $this->formTextarea('testo_completo', $this->news['testo_completo'],array('rows' => 5,'cols'=>50)) ?>
+	    </label></p>
+	    <p>* campo obbligatorio</p>
+	    <div class="buttons">
+	    	<input type="submit" name="annulla" value="Annulla" /><input type="submit" name="invia" value="Invia" />
+	    </div>
+	</fieldset>
+</form>
+<?php echo $this->render('footer.phtml'); ?>

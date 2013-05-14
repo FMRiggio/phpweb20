@@ -1,0 +1,23 @@
+<?php 
+if ($this->isXmlHttpRequest) {
+	echo $this->render('lib/month-preview.phtml');
+} else {
+	echo $this->render('header.phtml');
+
+	if ($this->totalPosts == 1) {?>
+		<p>E' attualmente presente 1 post nel tuo blog.
+	<?php } else { ?>
+		<p>Ci sono attualmente <?php echo $this->totalPosts; ?> post nel tuo blog.</p>
+	<?php }?>
+	<form method="get" action="<?php echo $this->geturl(array('controller' => 'blogmanager', 'action' => 'edit'));?>">
+		<div class="submit">
+			<input type="submit" value="Crea un nuovo post del blog" />
+		</div>
+	</form>
+	
+	<div id="month-preview"><?php echo $this->render('lib/month-preview.phtml');?></div>
+	
+<?php 
+	echo $this->partial('footer.phtml', array('id_utente' => $this->identity->id_utente, 'leftColumn' => 'lib/left-column.phtml')); 
+}
+?>

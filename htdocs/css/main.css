@@ -1,0 +1,95 @@
+body {
+	background-color: #EFEFED;
+	font-family: "Trebuchet MS", Verdana, Arial, Sans-serif;
+	padding: 10pt;
+	text-align: center;
+}
+
+FIELDSET {
+	padding: 10px;
+	}
+legend {
+	font-weight: bold;
+	color: #B72E0B;
+}
+
+textarea {
+	width: 100%;
+}
+
+.inputForm {
+	width: 300px;
+}
+
+label {
+	font-weight: bold;
+	font-size: 90%;
+}
+
+h1 {
+	color: #B72E0B;
+}
+
+a,a:link,a:visited,a:hover {
+	color: #B72E0B;
+	text-decoration: underline;
+}
+
+h2 a,h2 a:link,h2 a:visited,h2 a:hover {
+	text-decoration: none;
+}
+
+#page {
+	margin: 0 auto;
+	text-align: left;
+	background-color: #fff;
+	border: solid 2px #C4C4C4;
+	width: 750px;
+	padding: 10px;
+}
+
+.news {
+	background-color: #fff;
+	margin: 10px 0 0 0;
+	padding: 5px;
+}
+
+.news h2 {
+	border-bottom: solid 1px #C4C4C4;
+	margin: 0;
+	padding: 0;
+}
+
+.autore {
+	margin: 0;
+	padding: 0;
+	color: #550000;
+	float: left;
+}
+
+.modifica {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+.testo {
+	padding-top: 5px;
+	line-height: 140%;
+	clear: both;
+}
+
+.errore {
+	color: #ffffff;
+	background-color: #ff0000;
+	font-weight: bold;
+	text-align: center;
+}
+
+.buttons {
+	text-align: right;
+}
+
+.buttons input {
+	width: 80px;
+}

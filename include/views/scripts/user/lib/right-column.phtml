@@ -1,0 +1,24 @@
+<?php 
+$summary = $this->GetTagSummary(array('id_utente' => $this->user->getId()));
+if (count($summary) > 0 ) {	
+?>	
+	<div class="box">
+		<h3>Tag di <?php echo $this->username;?></h3>
+		<ul>
+			<?php foreach ($summary as $tag => $arrTag) { ?>
+				<li>
+					<a href="<?php echo $this->geturl(array('route' => 'tagspace', 
+															'username' => $this->user->username, 
+															'tag' => $arrTag['tag']));?>">
+					<?php echo $arrTag['tag']; ?>
+					</a> (<?php echo $arrTag['count'];?> post)
+				</li>
+			<?php } ?>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" src="/js/BlogMonthlySummary.class.js"></script>
+	<script type="text/javascript">
+		new BlogMonthlySummary('month-preview', 'preview-months');
+	</script>
+<?php } ?>

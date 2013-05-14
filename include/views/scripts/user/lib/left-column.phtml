@@ -1,0 +1,62 @@
+<div class="box vcard">
+	<h3>Profilo di <?php echo $this->username; ?></h3>
+	<?php if (strlen($this->user->profile->public_first_name) > 0 || strlen($this->user->profile->public_last_name) > 0) {?>
+		<div class="fn n">
+			<?php if (strlen($this->user->profile->public_first_name) > 0) {?>
+				<span class="given-name"><<?php echo $this->user->profile->public_first_name; ?></span>
+			<?php } ?>
+			<?php if (strlen($this->user->profile->public_last_name) > 0) {?>
+				<span class="family-name"><<?php echo $this->user->profile->public_last_name; ?></span>
+			<?php } ?>			
+		</div>
+	<?php } else { ?>
+		<div class="fn nickname"><?php echo $this->user->username; ?></div>
+	<?php 
+	}
+	if (strlen($this->user->profile->public_email) > 0) {?>
+		<div>Email: <a href="mailto:<?php echo $this->user->profile->public_email; ?>"><?php echo $this->user->profile->public_email; ?></a></div>
+	<?php 
+	}
+	if (strlen($this->user->profile->public_home_phone) > 0) {?>
+		<div class="tel">
+			Telefono
+			(<span class="type">Casa</span>): <span class="value"><?php echo $this->user->profile->public_home_phone; ?></span>
+		</div>
+	<?php } 
+	if (strlen($this->user->profile->public_work_phone) > 0) {?>
+		<div class="tel">
+			Telefono
+			(<span class="type">Lavoro</span>): <span class="value"><?php echo $this->user->profile->public_work_phone; ?></span>
+		</div>
+	<?php } ?>		
+</div>
+
+<?php
+$summary = $this->GetMonthlyBlogSummary(array('id_utente' => $this->id_utente, 'liveOnly' => true));
+if (count($summary) > 0 ) {
+	
+?>
+	<div id="preview-months" class="box">
+		<h3>Archivio del Blog di <?php echo $this->username; ?></h3>
+		<ul>
+			<?php foreach ($summary as $month => $numPosts) {
+
+				?>
+				<li>
+					<a href="<?php echo $this->geturl(array('username' 	 => $this->user->username,
+															'route'		 => 'archive',
+															'year'		 => substr($month, 0, 4),
+															'month'		 => substr($month, 5, 2)));?>?month=<?php echo $month; ?>">
+					<?php echo $month; ?>
+					</a> (<?php echo $numPosts;?> post
+					<?php if ($numPosts != 1) { echo 's'; }?>)
+				</li>
+			<?php } ?>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" src="/js/BlogMonthlySummary.class.js"></script>
+	<script type="text/javascript">
+		new BlogMonthlySummary('month-preview', 'preview-months');
+	</script>
+<?php } ?>

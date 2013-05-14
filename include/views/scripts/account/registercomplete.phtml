@@ -1,0 +1,7 @@
+<?php 
+$user = $this->user;
+echo $this->render('header.phtml'); ?>
+<p>Grazie <?php echo $user->profile->nome; ?>, la tua registrazione è completa.</p>
+<p>La tua password ti è stata inviata via e-mail a <?php echo $user->profile->email; ?>
+<br />
+<?php echo $this->render('footer.phtml'); ?>

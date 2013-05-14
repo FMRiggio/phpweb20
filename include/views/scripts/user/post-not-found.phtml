@@ -1,0 +1,14 @@
+<?php echo $this->render('header.phtml');
+
+?>
+
+<p>Il post selezionato non può essere trovato.</p>
+
+<p>
+	<a href="<?php $this->geturl(array('username' => $this->user->username, 'route' => 'user')); ?>">Ritorna al blog di <?php echo $this->user->username; ?></a>
+</p>
+
+<?php
+echo $this->partial('footer.phtml', array('user' => $this->user,
+										  'leftColumn' => 'user/lib/left-column.phtml')); 
+?> 

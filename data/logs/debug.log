@@ -1,0 +1,446 @@
+2010-10-08T14:57:30+02:00 DEBUG (7): Test
+2010-10-20T09:28:55+02:00 NOTICE (5): jiuoumea
+2010-10-20T09:51:11+02:00 CRIT (2): Page not found
+2010-10-20T09:52:42+02:00 CRIT (2): Page not found
+2010-10-20T09:54:37+02:00 CRIT (2): Page not found
+2010-10-20T09:55:00+02:00 CRIT (2): Page not found
+2010-10-20T09:55:23+02:00 CRIT (2): Page not found
+2010-10-20T10:03:11+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:13:22+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:21:16+02:00 CRIT (2): Page not found
+2010-10-20T10:21:19+02:00 CRIT (2): Page not found
+2010-10-20T10:22:05+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:23:02+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:23:49+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:24:20+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:26:47+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:27:57+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:32:30+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:33:51+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:35:01+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:35:12+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T10:59:51+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T11:25:22+02:00 CRIT (2): Page not found
+2010-10-20T12:29:17+02:00 CRIT (2): Page not found
+2010-10-20T12:29:42+02:00 CRIT (2): Page not found
+2010-10-20T12:30:12+02:00 CRIT (2): Page not found
+2010-10-20T12:30:55+02:00 CRIT (2): Page not found
+2010-10-20T12:31:21+02:00 CRIT (2): Page not found
+2010-10-20T12:32:35+02:00 CRIT (2): Page not found
+2010-10-20T12:40:26+02:00 CRIT (2): Page not found
+2010-10-20T12:40:53+02:00 CRIT (2): Page not found
+2010-10-20T12:41:33+02:00 CRIT (2): Page not found
+2010-10-20T12:42:11+02:00 CRIT (2): Page not found
+2010-10-20T12:48:23+02:00 CRIT (2): Page not found
+2010-10-20T12:49:23+02:00 CRIT (2): Page not found
+2010-10-20T12:49:36+02:00 CRIT (2): Page not found
+2010-10-20T12:50:05+02:00 CRIT (2): Page not found
+2010-10-20T12:50:10+02:00 CRIT (2): Page not found
+2010-10-20T12:50:44+02:00 CRIT (2): Page not found
+2010-10-20T12:51:11+02:00 CRIT (2): Page not found
+2010-10-20T12:51:26+02:00 CRIT (2): Page not found
+2010-10-20T12:54:40+02:00 CRIT (2): Page not found
+2010-10-20T12:57:30+02:00 CRIT (2): Page not found
+2010-10-20T12:58:21+02:00 CRIT (2): Page not found
+2010-10-20T12:59:28+02:00 NOTICE (5): jodeathu
+2010-10-20T13:00:53+02:00 NOTICE (5): keasledo
+2010-10-20T13:00:59+02:00 CRIT (2): Page not found
+2010-10-20T13:53:20+02:00 CRIT (2): Page not found
+2010-10-20T13:57:20+02:00 CRIT (2): Page not found
+2010-10-20T14:00:56+02:00 CRIT (2): Page not found
+2010-10-20T14:01:05+02:00 CRIT (2): Page not found
+2010-10-20T14:01:25+02:00 CRIT (2): Page not found
+2010-10-20T14:02:05+02:00 CRIT (2): Page not found
+2010-10-20T14:05:45+02:00 CRIT (2): Page not found
+2010-10-20T14:16:42+02:00 WARN (4): Tentativo di login fallito da 127.0.0.1 utente FMRiggio (Password non valida) 
+2010-10-20T14:17:35+02:00 WARN (4): Tentativo di login fallito da 127.0.0.1 utente FMRiggio (Password non valida) 
+2010-10-20T14:17:51+02:00 WARN (4): Tentativo di login fallito da 127.0.0.1 utente FMRiggio (Password non valida) 
+2010-10-20T14:36:40+02:00 WARN (4): Tentativo di login fallito da 127.0.0.1 utente asdf (Nome utente sconosciuto) 
+2010-10-20T14:52:24+02:00 WARN (4): Tentativo di login fallito da 127.0.0.1 utente FMRiggio (Password non valida) 
+2010-10-20T15:04:21+02:00 NOTICE (5): d96e81862d17b4be0c6a4e9a67a07c65
+2010-10-20T15:05:33+02:00 NOTICE (5): 4b576764daae973ebed88328736a7fef
+2010-10-20T15:07:19+02:00 NOTICE (5): Nuova password per Filippo : gifroucr
+2010-10-20T15:07:47+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T15:49:10+02:00 CRIT (2): Page not found
+2010-10-20T15:49:20+02:00 CRIT (2): Page not found
+2010-10-20T15:52:47+02:00 CRIT (2): Page not found
+2010-10-20T15:54:59+02:00 NOTICE (5): Tentativo di login riuscito da 127.0.0.1 utente FMRiggio
+2010-10-20T16:18:54+02:00 CRIT (2): Page not found
+2010-10-20T16:18:58+02:00 CRIT (2): Page not found
+2010-10-22T14:13:42+02:00 CRIT (2): Page not found
+2010-10-22T14:13:45+02:00 CRIT (2): Page not found
+2010-10-25T17:35:18+02:00 CRIT (2): Page not found
+2010-10-25T17:35:19+02:00 CRIT (2): Page not found
+2010-10-25T17:35:22+02:00 CRIT (2): Page not found
+2010-10-25T17:38:47+02:00 CRIT (2): Page not found
+2010-10-25T17:40:18+02:00 CRIT (2): Page not found
+2010-10-25T17:43:57+02:00 CRIT (2): Page not found
+2010-10-25T17:44:48+02:00 CRIT (2): Page not found
+2010-10-25T17:45:23+02:00 CRIT (2): Page not found
+2010-10-25T17:48:02+02:00 CRIT (2): Page not found
+2010-10-25T17:52:22+02:00 CRIT (2): Page not found
+2010-10-25T17:53:33+02:00 CRIT (2): Page not found
+2010-10-25T17:53:39+02:00 CRIT (2): Page not found
+2010-10-25T17:53:44+02:00 CRIT (2): Page not found
+2010-10-25T17:56:21+02:00 CRIT (2): Page not found
+2010-10-26T09:01:16+02:00 CRIT (2): Page not found
+2010-10-26T09:01:19+02:00 CRIT (2): Page not found
+2010-10-26T09:01:20+02:00 CRIT (2): Page not found
+2010-10-26T13:48:04+02:00 CRIT (2): Page not found
+2010-10-27T14:04:20+02:00 CRIT (2): Page not found
+2010-10-27T14:04:20+02:00 CRIT (2): Page not found
+2010-10-27T14:04:23+02:00 CRIT (2): Page not found
+2010-10-27T14:04:29+02:00 CRIT (2): Page not found
+2010-10-27T14:04:43+02:00 CRIT (2): Page not found
+2010-10-27T14:05:57+02:00 CRIT (2): Page not found
+2010-10-27T14:06:38+02:00 CRIT (2): Page not found
+2010-10-27T14:07:23+02:00 CRIT (2): Page not found
+2010-10-27T14:08:05+02:00 CRIT (2): Page not found
+2010-10-27T14:08:30+02:00 CRIT (2): Page not found
+2010-10-27T14:09:31+02:00 CRIT (2): Page not found
+2010-10-27T14:09:37+02:00 CRIT (2): Page not found
+2010-10-27T14:09:40+02:00 CRIT (2): Page not found
+2010-10-27T14:10:17+02:00 CRIT (2): Page not found
+2010-10-27T14:10:28+02:00 CRIT (2): Page not found
+2010-10-27T14:11:00+02:00 CRIT (2): Page not found
+2010-10-27T14:11:03+02:00 CRIT (2): Page not found
+2010-10-28T13:45:02+02:00 CRIT (2): Page not found
+2010-10-28T13:45:05+02:00 CRIT (2): Page not found
+2010-10-28T13:46:29+02:00 CRIT (2): Page not found
+2010-10-28T13:47:54+02:00 CRIT (2): Page not found
+2010-11-03T13:51:20+01:00 CRIT (2): Page not found
+2010-11-03T13:51:23+01:00 CRIT (2): Page not found
+2010-11-03T13:51:55+01:00 CRIT (2): Page not found
+2010-11-03T14:01:36+01:00 CRIT (2): Page not found
+2010-11-04T08:48:51+01:00 CRIT (2): Page not found
+2010-11-04T08:48:54+01:00 CRIT (2): Page not found
+2010-11-04T08:52:44+01:00 CRIT (2): Page not found
+2010-11-04T10:39:41+01:00 CRIT (2): Page not found
+2010-11-04T12:57:54+01:00 CRIT (2): Page not found
+2010-11-04T12:58:39+01:00 CRIT (2): Page not found
+2010-11-04T13:44:50+01:00 CRIT (2): Page not found
+2010-11-04T13:44:54+01:00 CRIT (2): Page not found
+2010-11-04T13:55:37+01:00 CRIT (2): Page not found
+2010-11-04T14:06:24+01:00 CRIT (2): Page not found
+2010-11-04T17:28:17+01:00 CRIT (2): Page not found
+2010-11-04T17:56:05+01:00 CRIT (2): Page not found
+2010-11-04T17:56:12+01:00 CRIT (2): Page not found
+2010-11-04T17:56:44+01:00 CRIT (2): Page not found
+2010-11-04T17:56:45+01:00 CRIT (2): Page not found
+2010-11-04T17:56:54+01:00 CRIT (2): Page not found
+2010-11-04T17:57:19+01:00 CRIT (2): Page not found
+2010-11-04T17:57:20+01:00 CRIT (2): Page not found
+2010-11-04T17:57:20+01:00 CRIT (2): Page not found
+2010-11-04T17:58:12+01:00 CRIT (2): Page not found
+2010-11-04T17:58:22+01:00 CRIT (2): Page not found
+2010-11-04T17:58:29+01:00 CRIT (2): Page not found
+2010-11-04T17:58:41+01:00 CRIT (2): Page not found
+2010-11-04T17:59:07+01:00 CRIT (2): Page not found
+2010-11-04T17:59:45+01:00 CRIT (2): Page not found
+2010-11-04T17:59:54+01:00 CRIT (2): Page not found
+2010-11-04T18:00:04+01:00 CRIT (2): Page not found
+2010-11-04T18:00:04+01:00 CRIT (2): Page not found
+2010-11-04T18:00:05+01:00 CRIT (2): Page not found
+2010-11-04T18:00:27+01:00 CRIT (2): Page not found
+2010-11-04T18:00:32+01:00 CRIT (2): Page not found
+2010-11-04T18:00:46+01:00 CRIT (2): Page not found
+2010-11-04T18:01:01+01:00 CRIT (2): Page not found
+2010-11-04T18:01:06+01:00 CRIT (2): Page not found
+2010-11-04T18:01:11+01:00 CRIT (2): Page not found
+2010-11-04T18:01:12+01:00 CRIT (2): Page not found
+2010-11-04T18:01:36+01:00 CRIT (2): Page not found
+2010-11-09T08:51:39+01:00 CRIT (2): Page not found
+2010-11-09T08:51:42+01:00 CRIT (2): Page not found
+2010-11-09T13:52:18+01:00 CRIT (2): Page not found
+2010-11-09T13:52:21+01:00 CRIT (2): Page not found
+2010-11-09T13:52:42+01:00 CRIT (2): Page not found
+2010-11-09T13:59:18+01:00 CRIT (2): Page not found
+2010-11-09T13:59:18+01:00 CRIT (2): Page not found
+2010-12-17T13:18:56+01:00 CRIT (2): Page not found
+2010-12-17T13:18:59+01:00 CRIT (2): Page not found
+2010-12-17T13:19:24+01:00 CRIT (2): Page not found
+2010-12-17T13:19:34+01:00 CRIT (2): Page not found
+2010-12-17T13:19:35+01:00 CRIT (2): Page not found
+2010-12-17T13:20:55+01:00 CRIT (2): Page not found
+2010-12-17T13:20:55+01:00 CRIT (2): Page not found
+2010-12-17T13:22:06+01:00 CRIT (2): Page not found
+2010-12-17T13:22:07+01:00 CRIT (2): Page not found
+2010-12-17T13:23:00+01:00 CRIT (2): Page not found
+2010-12-17T13:23:00+01:00 CRIT (2): Page not found
+2010-12-17T13:23:05+01:00 CRIT (2): Page not found
+2010-12-17T13:23:06+01:00 CRIT (2): Page not found
+2010-12-17T13:23:08+01:00 CRIT (2): Page not found
+2010-12-17T13:23:09+01:00 CRIT (2): Page not found
+2010-12-17T13:23:23+01:00 CRIT (2): Page not found
+2010-12-17T13:23:23+01:00 CRIT (2): Page not found
+2010-12-17T13:24:05+01:00 CRIT (2): Page not found
+2010-12-17T13:24:05+01:00 CRIT (2): Page not found
+2010-12-17T13:24:07+01:00 CRIT (2): Page not found
+2010-12-17T13:24:07+01:00 CRIT (2): Page not found
+2010-12-17T13:24:09+01:00 CRIT (2): Page not found
+2010-12-17T13:24:09+01:00 CRIT (2): Page not found
+2010-12-17T13:24:15+01:00 CRIT (2): Page not found
+2010-12-17T13:24:15+01:00 CRIT (2): Page not found
+2010-12-17T13:24:18+01:00 CRIT (2): Page not found
+2010-12-17T13:24:19+01:00 CRIT (2): Page not found
+2010-12-17T13:33:54+01:00 CRIT (2): Page not found
+2010-12-17T13:33:55+01:00 CRIT (2): Page not found
+2010-12-17T13:35:00+01:00 CRIT (2): Page not found
+2010-12-17T13:35:07+01:00 CRIT (2): Page not found
+2010-12-17T13:35:18+01:00 CRIT (2): Page not found
+2010-12-17T13:35:45+01:00 CRIT (2): Page not found
+2011-01-03T14:19:31+01:00 CRIT (2): Page not found
+2011-01-03T14:19:34+01:00 CRIT (2): Page not found
+2011-01-03T14:20:01+01:00 CRIT (2): Page not found
+2011-01-03T14:21:42+01:00 CRIT (2): Page not found
+2011-01-03T14:25:37+01:00 CRIT (2): Page not found
+2011-01-03T14:54:37+01:00 CRIT (2): Page not found
+2011-01-03T14:54:41+01:00 CRIT (2): Page not found
+2011-01-03T14:55:20+01:00 CRIT (2): Page not found
+2011-01-03T14:55:21+01:00 CRIT (2): Page not found
+2011-01-03T14:55:22+01:00 CRIT (2): Page not found
+2011-01-03T14:55:22+01:00 CRIT (2): Page not found
+2011-01-03T14:55:22+01:00 CRIT (2): Page not found
+2011-01-03T14:55:30+01:00 CRIT (2): Page not found
+2011-01-03T14:55:55+01:00 CRIT (2): Page not found
+2011-01-03T14:56:24+01:00 CRIT (2): Page not found
+2011-01-03T14:56:50+01:00 CRIT (2): Page not found
+2011-01-03T15:00:21+01:00 CRIT (2): Page not found
+2011-01-03T15:07:16+01:00 CRIT (2): Page not found
+2011-01-03T15:08:31+01:00 CRIT (2): Page not found
+2011-01-03T15:08:37+01:00 CRIT (2): Page not found
+2011-01-03T15:09:34+01:00 CRIT (2): Page not found
+2011-01-03T15:10:36+01:00 CRIT (2): Page not found
+2011-01-03T15:10:50+01:00 CRIT (2): Page not found
+2011-01-03T15:11:24+01:00 CRIT (2): Page not found
+2011-01-03T15:15:33+01:00 CRIT (2): Page not found
+2011-01-03T15:15:45+01:00 CRIT (2): Page not found
+2011-01-03T15:16:44+01:00 CRIT (2): Page not found
+2011-01-03T15:18:21+01:00 CRIT (2): Page not found
+2011-01-03T15:20:49+01:00 CRIT (2): Page not found
+2011-01-03T15:21:31+01:00 CRIT (2): Page not found
+2011-01-03T15:21:56+01:00 CRIT (2): Page not found
+2011-01-03T15:23:08+01:00 CRIT (2): Page not found
+2011-01-03T15:23:21+01:00 CRIT (2): Page not found
+2011-01-03T15:23:53+01:00 CRIT (2): Page not found
+2011-01-03T15:24:10+01:00 CRIT (2): Page not found
+2011-01-03T15:24:21+01:00 CRIT (2): Page not found
+2011-01-03T15:35:44+01:00 CRIT (2): Page not found
+2011-01-03T15:36:03+01:00 CRIT (2): Page not found
+2011-01-03T15:41:33+01:00 CRIT (2): Page not found
+2011-01-03T15:46:34+01:00 CRIT (2): Page not found
+2011-01-03T15:47:19+01:00 CRIT (2): Page not found
+2011-01-03T15:47:38+01:00 CRIT (2): Page not found
+2011-01-03T15:48:18+01:00 CRIT (2): Page not found
+2011-01-03T15:53:04+01:00 CRIT (2): Page not found
+2011-01-03T15:53:52+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-03T15:55:44+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-03T15:58:46+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-03T16:03:09+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-03T16:07:46+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-03T16:22:48+01:00 CRIT (2): Page not found
+2011-01-03T16:23:13+01:00 CRIT (2): Page not found
+2011-01-03T16:23:26+01:00 CRIT (2): Page not found
+2011-01-03T16:23:37+01:00 CRIT (2): Page not found
+2011-01-03T16:24:56+01:00 CRIT (2): Page not found
+2011-01-03T16:25:33+01:00 CRIT (2): Page not found
+2011-01-03T17:37:55+01:00 CRIT (2): Page not found
+2011-01-03T17:38:13+01:00 CRIT (2): Page not found
+2011-01-03T17:38:28+01:00 CRIT (2): Page not found
+2011-01-03T17:38:34+01:00 CRIT (2): Page not found
+2011-01-03T17:38:36+01:00 CRIT (2): Page not found
+2011-01-10T16:22:25+01:00 WARN (4): Failed login attempt from 127.0.0.1 user FMRiggio (Invalid password)
+2011-01-10T16:22:34+01:00 WARN (4): Failed login attempt from 127.0.0.1 user admin (Unknown username)
+2011-01-10T16:23:27+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-10T16:29:15+01:00 CRIT (2): Page not found
+2011-01-11T13:26:58+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-14T13:29:32+01:00 WARN (4): Failed login attempt from 127.0.0.1 user FMRiggio (Invalid password)
+2011-01-14T13:29:42+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-14T14:03:56+01:00 CRIT (2): Page not found
+2011-01-14T14:04:15+01:00 CRIT (2): Page not found
+2011-01-14T14:04:30+01:00 CRIT (2): Page not found
+2011-01-14T14:04:40+01:00 CRIT (2): Page not found
+2011-01-14T14:05:23+01:00 CRIT (2): Page not found
+2011-01-14T14:07:24+01:00 CRIT (2): Page not found
+2011-01-17T13:35:19+01:00 WARN (4): Failed login attempt from 127.0.0.1 user FMRiggio (Invalid password)
+2011-01-17T13:35:24+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-17T13:46:45+01:00 CRIT (2): Page not found
+2011-01-17T13:49:45+01:00 CRIT (2): Page not found
+2011-01-17T13:50:23+01:00 CRIT (2): Page not found
+2011-01-17T13:50:35+01:00 CRIT (2): Page not found
+2011-01-17T13:50:56+01:00 CRIT (2): Page not found
+2011-01-17T13:51:02+01:00 CRIT (2): Page not found
+2011-01-17T13:51:21+01:00 CRIT (2): Page not found
+2011-01-17T13:52:10+01:00 CRIT (2): Page not found
+2011-01-17T13:52:41+01:00 CRIT (2): Page not found
+2011-01-17T13:53:39+01:00 CRIT (2): Page not found
+2011-01-17T13:55:27+01:00 CRIT (2): Page not found
+2011-01-17T13:55:32+01:00 CRIT (2): Page not found
+2011-01-17T13:56:03+01:00 CRIT (2): Page not found
+2011-01-17T13:56:29+01:00 CRIT (2): Page not found
+2011-01-17T13:58:33+01:00 CRIT (2): Page not found
+2011-01-17T14:03:53+01:00 CRIT (2): Page not found
+2011-01-17T15:56:53+01:00 CRIT (2): Page not found
+2011-01-17T15:57:23+01:00 CRIT (2): Page not found
+2011-01-17T15:57:40+01:00 CRIT (2): Page not found
+2011-01-17T15:58:02+01:00 CRIT (2): Page not found
+2011-01-17T15:59:04+01:00 CRIT (2): Page not found
+2011-01-17T15:59:15+01:00 CRIT (2): Page not found
+2011-01-17T15:59:45+01:00 CRIT (2): Page not found
+2011-01-17T16:00:00+01:00 CRIT (2): Page not found
+2011-01-17T16:02:35+01:00 CRIT (2): Page not found
+2011-01-17T16:09:01+01:00 CRIT (2): Page not found
+2011-01-17T16:09:10+01:00 CRIT (2): Page not found
+2011-01-17T16:10:11+01:00 CRIT (2): Page not found
+2011-01-17T16:10:19+01:00 CRIT (2): Page not found
+2011-01-17T16:10:31+01:00 CRIT (2): Page not found
+2011-01-17T16:11:33+01:00 CRIT (2): Page not found
+2011-01-17T16:13:18+01:00 CRIT (2): Page not found
+2011-01-17T16:14:02+01:00 CRIT (2): Page not found
+2011-01-18T13:34:24+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-20T12:03:49+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-20T13:16:49+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-21T13:21:54+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-24T11:11:24+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-25T08:48:09+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-01-25T09:02:34+01:00 CRIT (2): Page not found
+2011-01-25T13:51:20+01:00 CRIT (2): Page not found
+2011-01-26T13:13:41+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-01T13:30:31+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-02T13:32:21+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-03T13:23:35+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-03T13:28:12+01:00 CRIT (2): Page not found
+2011-02-03T13:28:27+01:00 CRIT (2): Page not found
+2011-02-03T13:28:37+01:00 CRIT (2): Page not found
+2011-02-03T13:29:53+01:00 CRIT (2): Page not found
+2011-02-03T13:30:15+01:00 CRIT (2): Page not found
+2011-02-03T13:31:21+01:00 CRIT (2): Page not found
+2011-02-03T13:31:28+01:00 CRIT (2): Page not found
+2011-02-03T13:31:58+01:00 CRIT (2): Page not found
+2011-02-03T13:32:21+01:00 CRIT (2): Page not found
+2011-02-03T13:40:35+01:00 CRIT (2): Page not found
+2011-02-03T13:42:16+01:00 CRIT (2): Page not found
+2011-02-03T13:42:22+01:00 CRIT (2): Page not found
+2011-02-03T13:43:13+01:00 CRIT (2): Page not found
+2011-02-03T13:44:54+01:00 CRIT (2): Page not found
+2011-02-03T13:48:11+01:00 CRIT (2): Page not found
+2011-02-03T13:49:38+01:00 CRIT (2): Page not found
+2011-02-03T13:49:46+01:00 CRIT (2): Page not found
+2011-02-03T13:49:49+01:00 CRIT (2): Page not found
+2011-02-04T13:26:10+01:00 CRIT (2): Page not found
+2011-02-04T13:26:12+01:00 CRIT (2): Page not found
+2011-02-04T13:26:15+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-04T13:26:15+01:00 CRIT (2): Page not found
+2011-02-04T13:26:15+01:00 CRIT (2): Page not found
+2011-02-07T13:32:49+01:00 CRIT (2): Page not found
+2011-02-07T13:32:52+01:00 CRIT (2): Page not found
+2011-02-07T13:36:13+01:00 CRIT (2): Page not found
+2011-02-07T13:39:42+01:00 CRIT (2): Page not found
+2011-02-07T13:40:02+01:00 CRIT (2): Page not found
+2011-02-07T13:50:22+01:00 CRIT (2): Page not found
+2011-02-07T13:50:26+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-07T13:51:48+01:00 CRIT (2): Page not found
+2011-02-07T13:52:00+01:00 CRIT (2): Page not found
+2011-02-07T13:52:00+01:00 CRIT (2): Page not found
+2011-02-07T13:52:01+01:00 CRIT (2): Page not found
+2011-02-07T13:52:33+01:00 CRIT (2): Page not found
+2011-02-07T13:53:10+01:00 CRIT (2): Page not found
+2011-02-07T13:53:17+01:00 CRIT (2): Page not found
+2011-02-07T13:56:28+01:00 CRIT (2): Page not found
+2011-02-07T13:58:39+01:00 CRIT (2): Page not found
+2011-02-07T14:01:33+01:00 CRIT (2): Page not found
+2011-02-07T14:01:56+01:00 CRIT (2): Page not found
+2011-02-08T13:12:47+01:00 CRIT (2): Page not found
+2011-02-08T13:12:50+01:00 CRIT (2): Page not found
+2011-02-09T13:34:17+01:00 CRIT (2): Page not found
+2011-02-09T13:34:17+01:00 CRIT (2): Page not found
+2011-02-09T13:34:17+01:00 CRIT (2): Page not found
+2011-02-09T13:34:20+01:00 CRIT (2): Page not found
+2011-02-09T13:36:53+01:00 CRIT (2): Page not found
+2011-02-09T13:37:15+01:00 CRIT (2): Page not found
+2011-02-09T13:37:17+01:00 CRIT (2): Page not found
+2011-02-09T13:37:57+01:00 CRIT (2): Page not found
+2011-02-09T13:38:05+01:00 CRIT (2): Page not found
+2011-02-09T13:38:56+01:00 CRIT (2): Page not found
+2011-02-09T13:39:18+01:00 CRIT (2): Page not found
+2011-02-09T13:39:48+01:00 CRIT (2): Page not found
+2011-02-09T13:41:34+01:00 CRIT (2): Page not found
+2011-02-09T13:47:50+01:00 CRIT (2): Page not found
+2011-02-09T13:47:55+01:00 CRIT (2): Page not found
+2011-02-09T13:47:56+01:00 CRIT (2): Page not found
+2011-02-09T13:48:01+01:00 CRIT (2): Page not found
+2011-02-09T13:52:04+01:00 CRIT (2): Page not found
+2011-02-09T13:52:17+01:00 CRIT (2): Page not found
+2011-02-09T13:52:25+01:00 CRIT (2): Page not found
+2011-02-09T13:52:26+01:00 CRIT (2): Page not found
+2011-02-09T13:52:35+01:00 CRIT (2): Page not found
+2011-02-09T13:52:36+01:00 CRIT (2): Page not found
+2011-02-09T13:52:48+01:00 CRIT (2): Page not found
+2011-02-09T13:52:49+01:00 CRIT (2): Page not found
+2011-02-09T13:53:17+01:00 CRIT (2): Page not found
+2011-02-09T13:53:24+01:00 CRIT (2): Page not found
+2011-02-09T13:54:01+01:00 CRIT (2): Page not found
+2011-02-09T13:54:29+01:00 CRIT (2): Page not found
+2011-02-10T13:44:44+01:00 CRIT (2): Page not found
+2011-02-10T13:44:47+01:00 CRIT (2): Page not found
+2011-02-10T13:50:49+01:00 CRIT (2): Page not found
+2011-02-10T13:51:56+01:00 CRIT (2): Page not found
+2011-02-10T14:00:51+01:00 CRIT (2): Page not found
+2011-02-10T14:04:14+01:00 CRIT (2): Page not found
+2011-02-10T14:06:17+01:00 CRIT (2): Page not found
+2011-02-14T13:42:54+01:00 CRIT (2): Page not found
+2011-02-14T13:42:57+01:00 CRIT (2): Page not found
+2011-02-14T13:43:48+01:00 CRIT (2): Page not found
+2011-02-14T13:44:41+01:00 CRIT (2): Page not found
+2011-02-14T13:45:10+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-14T14:01:11+01:00 CRIT (2): Page not found
+2011-02-14T14:01:51+01:00 CRIT (2): Page not found
+2011-02-14T14:02:28+01:00 CRIT (2): Page not found
+2011-02-15T08:47:54+01:00 CRIT (2): Page not found
+2011-02-15T08:47:57+01:00 CRIT (2): Page not found
+2011-02-15T09:02:39+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-15T13:39:21+01:00 CRIT (2): Page not found
+2011-02-15T13:39:24+01:00 CRIT (2): Page not found
+2011-02-15T13:47:44+01:00 CRIT (2): Page not found
+2011-02-15T13:48:43+01:00 CRIT (2): Page not found
+2011-02-15T13:58:08+01:00 CRIT (2): Page not found
+2011-02-15T13:58:53+01:00 CRIT (2): Page not found
+2011-02-15T14:00:49+01:00 CRIT (2): Page not found
+2011-02-16T13:52:27+01:00 CRIT (2): Page not found
+2011-02-16T13:52:31+01:00 CRIT (2): Page not found
+2011-02-16T14:01:53+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-16T14:21:25+01:00 CRIT (2): Page not found
+2011-02-16T14:21:25+01:00 CRIT (2): Page not found
+2011-02-16T14:22:15+01:00 CRIT (2): Page not found
+2011-02-16T14:22:16+01:00 CRIT (2): Page not found
+2011-02-16T16:07:14+01:00 CRIT (2): Page not found
+2011-02-17T08:54:40+01:00 CRIT (2): Page not found
+2011-02-17T08:54:43+01:00 CRIT (2): Page not found
+2011-02-17T08:56:22+01:00 CRIT (2): Page not found
+2011-02-17T08:56:35+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-17T08:56:57+01:00 CRIT (2): Page not found
+2011-02-17T08:58:09+01:00 CRIT (2): Page not found
+2011-02-17T09:19:26+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-18T08:57:18+01:00 CRIT (2): Page not found
+2011-02-18T08:57:21+01:00 CRIT (2): Page not found
+2011-02-18T09:01:23+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-21T13:10:09+01:00 CRIT (2): Page not found
+2011-02-21T13:11:01+01:00 CRIT (2): Page not found
+2011-02-21T13:11:02+01:00 CRIT (2): Page not found
+2011-02-21T13:11:55+01:00 CRIT (2): Page not found
+2011-02-21T13:12:02+01:00 CRIT (2): Page not found
+2011-02-21T13:12:39+01:00 CRIT (2): Page not found
+2011-02-21T13:13:39+01:00 CRIT (2): Page not found
+2011-02-21T13:25:43+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-21T15:58:11+01:00 CRIT (2): Page not found
+2011-02-21T15:58:13+01:00 CRIT (2): Page not found
+2011-02-22T09:04:13+01:00 CRIT (2): Page not found
+2011-02-22T09:04:15+01:00 CRIT (2): Page not found
+2011-02-22T09:04:31+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-23T13:46:42+01:00 CRIT (2): Page not found
+2011-02-23T13:46:45+01:00 CRIT (2): Page not found
+2011-02-23T13:48:30+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-24T08:47:36+01:00 CRIT (2): Page not found
+2011-02-24T08:47:39+01:00 CRIT (2): Page not found
+2011-02-24T08:49:53+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test
+2011-02-24T13:16:03+01:00 NOTICE (5): Successful login attempt from 127.0.0.1 user test

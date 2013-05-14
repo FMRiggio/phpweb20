@@ -1,0 +1,73 @@
+<?php 
+$config = $this->config; 
+$section = $this->section;
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it">
+<head>
+<?php
+echo $this->headTitle(); echo "\n";
+echo $this->headMeta(); echo "\n";
+echo $this->headLink(); echo "\n";
+echo $this->headScript(); echo "\n";
+
+if ($this->lightbox) {
+	echo '<script type="text/javascript" scr="/js/lightbox.js"></script>';
+	echo '<link rel="stylesheet" href="/css/lightbox.css" type="text/css" />';
+}
+
+if ($this->maps) {
+	echo '<script type="text/javascript" src="http://www.google.com/jsapi?key=' . $config->google->maps->key . '"></script>';	
+	if ($section == 'blogmanager') {
+		echo '<script type="text/javascript" src="/js/BlogLocationManager.class.js"></script>';	
+	}
+}
+
+if (strlen($this->feedUrl) > 0 && strlen($this->feedTitle) > 0) {
+	echo '<link ref="alternate" type="application/atom+xml" title="' . $this->feedTitle . '" ';
+	echo 'href="' . $this->feedUrl . '" />';
+}
+?>
+</head>
+<body>
+	<div id="header"><img src="/images/logo-print.gif" alt="" /></div>
+
+        <div id="nav">
+            <ul>
+                <li <?php if ($section == 'home') echo 'class="active"'; ?>>
+                    <a href="<?php echo $this->geturl(array('controller' => 'index'));?>">Home</a>
+                </li>
+                <?php if ($this->authenticated) { ?>
+                    <li <?php if ($section == 'account') echo 'class="active"'; ?>>
+                        <a href="<?php echo $this->geturl(array('controller' => 'account'));?>">Your Account</a>
+                    </li>
+                    <li <?php if ($section == 'account') echo 'class="active"'; ?>>
+                        <a href="<?php echo $this->geturl(array('controller' => 'account', 'action' => 'details'));?>">Update Your Data</a>
+                    </li>
+                    <li <?php if ($section == 'blogmanager') echo 'class="active"'; ?>>
+                        <a href="<?php echo $this->geturl(array('controller' => 'blogmanager'));?>">Tuo Blog</a>
+                    </li>
+                    <li><a href="<?php echo $this->geturl(array('controller' => 'account', 'action' => 'logout'));?>">Logout</a></li>
+                <?php } else { ?>
+                    <li <?php if ($section == 'register') echo 'class="active"'; ?>>
+                        <a href="<?php echo $this->geturl(array('controller' => 'account', 'action' => 'register'));?>">Register</a>
+                    </li>
+                    <li <?php if ($section == 'login') echo 'class="active"'; ?>>
+                        <a href="<?php echo $this->geturl(array('controller' => 'account', 'action' => 'login'));?>">Login</a>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+
+        <div id="content-container" class="column">
+            <div id="content">
+                <div id="breadcrumbs"><?php echo $this->breadcrumbs(array('trail' => $this->trail, 'separator' => ' &raquo; '));?></div>
+				<?php 
+                echo '<h1>' . $this->titolo;
+                if (strlen($this->feedUrl) > 0 && strlen($this->feedTitle) > 0) {
+                	echo '<a href="' . $this->feedUrl . '" title="' . $this->feedTitle . '"';
+                	echo '<img src="/images/feed-icon.png" alt="' . $this->feedTitle . '" />';
+                	echo '</a>';
+                }
+                echo '</h1>';
+				?>

@@ -1,0 +1,62 @@
+<?php
+$config = Zend_Registry::get('config');
+echo $this->render('header.phtml'); 
+
+$fp = $this->fp;
+
+?>
+<script type="text/javascript">
+<!--
+new UserRegistrationForm('registration-form');
+//-->
+</script>
+<form method="post" action="/account/register" id="registration-form">
+<fieldset>
+	<legend>Creare un account</legend>
+
+	<div class="error" <?php if (!$this->fp->hasError()) { echo 'style="display:none;"'; } ?>>
+		Si è verificato un errore nel form sottostante.<br/>
+		Si prega di verificare i campi evidenziati e di reinviare il form.
+	</div>
+	
+	<div class="row" id ="form_username_container">
+		<label for="form_username">Username utente:</label>
+		<input type="text" id="form_username" name="username" value="<?php echo $this->fp->username; ?>" />
+		<?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('username'))); ?>			
+	</div>
+	
+	<div class="row" id ="form_email_container">
+		<label for="form_email">Email utente:</label>
+		<input type="text" id="form_email" name="email" value="<?php echo $this->fp->email; ?>" />
+		<?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('email'))); ?>			
+	</div>	
+	
+	<div class="row" id ="form_nome_container">
+		<label for="form_nome">Nome:</label>
+		<input type="text" id="form_nome" name="nome" value="<?php echo $this->fp->nome; ?>" />
+		<?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('nome'))); ?>			
+	</div>
+	
+	<div class="row" id ="form_cognome_container">
+		<label for="form_cognome">Cognome:</label>
+		<input type="text" id="form_cognome" name="cognome" value="<?php echo $this->fp->cognome; ?>" />
+		<?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('cognome'))); ?>		
+	</div>		
+	
+	<div class="captcha">
+		<img src="/utility/captcha" />
+	</div>
+	
+	<div class="row" id ="form_captcha_container">
+		<label for="form_captcha">Testo captcha:</label>
+		<input type="text" id="form_captcha" name="captcha" value="<?php echo $this->fp->captcha; ?>" />
+		<?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('captcha'))); ?>		
+	</div>		
+	
+	<div class="submit">
+		<input type="submit" value="Registra" />
+	</div>
+</fieldset>
+</form>
+
+<?php echo $this->render('footer.phtml'); ?>

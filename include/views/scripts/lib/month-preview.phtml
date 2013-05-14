@@ -1,0 +1,36 @@
+<h2><?php echo date('F Y', $this->month);?></h2>
+<?php 
+$recentPosts = $this->recentPosts;
+/*
+foreach ($recentPosts as $post) {
+	echo $post->profile->title;	
+}
+die;
+*/
+?>
+<?php if (count($recentPosts) == 0) { ?>
+	<p>Nessun post trovato per questo mese.</p>
+<?php } else { ?>
+	<dl>
+		<?php 
+			
+			foreach ($recentPosts as $post) {
+				echo '<dt>';
+				echo date('D,j M', $post->ts_creazione) . " : ";
+				$url = $this->geturl(array('controller' => 'blogmanager', 'action' => 'preview'));
+								
+				echo '<a href="' . $url . '?id=' . $post->getId() . '">';
+				echo $post->profile->title;
+				echo '</a>';
+				if (!$post->isLive()) {
+					echo '<span class="status draft">non pubblicato</span>';
+				} 
+				echo '</dt>';
+				echo '<dd>';
+				echo $post->getTeaser(100);
+				echo '</dd>';
+
+			}
+		?>
+	</dl>
+<?php } ?>

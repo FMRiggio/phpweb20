@@ -1,0 +1,119 @@
+<?php 
+echo $this->render('header.phtml'); 
+?>
+<script type="text/javascript" src="/js/blogPreview.js"></script>
+<script type="text/javascript" src="/js/BlogImageManager.class.js"></script>
+
+<form method="post" action ="<?php echo $this->geturl(array('controller' => 'blogmanager', 'action' => 'setstatus'));?>" id="status-form">
+	<div class="preview-status">
+		<input type="hidden" name="id" value="<?php echo $this->post->getId();?>" />
+		<?php if ($this->post->isLive()) {?>
+			<div class="status live">
+            Questo post è stato pubblicato nel tuo blog.<br />
+            Per vederlo in anteprima clicca sul bottone <strong>Anteprima post</strong>.
+            <div>
+                <input type="submit" value="Anteprima Post" name="unpublish" id="status-unpublish" />
+                <input type="submit" value="Modifica post" name="edit" id="status-edit" />
+                <input type="submit" value="Cancella post" name="delete" id="status-delete" />
+            </div>
+        </div>
+		<?php } else { ?>
+	        <div class="status draft">
+	            Questo post non è ancora pubblicato sul tuo blog. <br />
+	            Per pubblicarlo clicca sul bottone <strong>Pubblica post</strong>.
+	            <div>
+	                <input type="submit" value="Pubblica post" name="publish" id="status-publish" />
+	                <input type="submit" value="Modifica post" name="edit" id="status-edit" />
+	                <input type="submit" value="Cancella post" name="delete" id="status-delete" />
+	            </div>
+	        </div>		
+		<?php } ?>
+	</div>
+</form>
+
+<fieldset id="preview-locations">
+	<legend>Locations</legend>
+	<ul>
+		<?php 
+		if (count($this->post->luoghi) > 0) {
+			foreach ($this->post->luoghi as $location) {
+				echo '<li>' . $location->descrizione . '</li>';
+			}
+		} else {
+			echo '<li>Nessun luogo assegnato a questo post.</li>';
+		}
+		?>
+	</ul>
+	<form method="get" action="<?php echo $this->geturl(array('controller' => 'blogmanager', 'action' => 'locations')); ?>">
+		<div>
+			<input type="hidden" name="id" value="<?php echo $this->post->getId();?>" />
+			<input type="submit" value="Gestisci i luoghi" />
+		</div>
+	</form>
+</fieldset>
+
+<fieldset id="preview-tags">
+    <legend>Tags</legend>
+    <ul>
+    	<?php 
+    	if (count($this->post->getTags()) > 0) {
+	    	foreach ($this->post->getTags() as $tag) {?>
+	            <li>
+	                <form method="post" action="<?php echo $this->geturl(array('action' => 'tags'));?>">
+	                    <div>
+	                        <?php echo $tag; ?>
+	                        <input type="hidden" name="id" value="<?php echo $this->post->getId();?>" />
+	                        <input type="hidden" name="tag" value="<?php echo $tag; ?>" />
+	                        <input type="submit" value="Cancella" name="delete" />
+	                    </div>
+	                </form>
+	            </li>
+	         <?php 
+	    	}
+	   	} else {?>
+            <li>Nessun tag trovato</li>
+  <?php } ?>    
+    </ul>
+
+    <form method="post" action="<?php echo $this->geturl(array('action' => 'tags'));?>">
+        <div>
+            <input type="hidden" name="id" value="<?php echo $this->post->getId();?>" />
+            <input type="text" name="tag" />
+            <input type="submit" value="Aggiungi Tag" name="add" />
+        </div>
+    </form>
+</fieldset>
+
+<fieldset id="preview-images">
+	<legend>Immagini</legend>
+	<?php if (count($this->post->images) > 0) {?>
+		<ul id="post_images">
+			<?php foreach ($this->post->images as $image) {?>
+				<li id="image_<?php echo $image->getId();?>">
+					<img src="<?php echo $this->ImageFileName(array('id' => $image->getId(), 'w' => 100));?>"
+						alt="<?php echo $image->nome_file;?>" />
+					<form method="post" action="<?php echo $this->geturl(array('action' => 'images'));?>">
+						<div>
+							<input type="hidden" name="id" value="<?php echo $this->post->getId();?>" />
+							<input type="hidden" name="image" value="<?php echo $image->getId();?>" />
+							<input type="submit" name="delete" value="Cancella" />
+						</div>
+					</form>
+				</li>
+			<?php } ?>
+		</ul>
+	<?php } ?>
+	<form method="post" action="<?php echo $this->geturl(array('action' => 'images'));?>" enctype="multipart/form-data">
+		<div>
+			<input type="hidden" name="id" value="<?php echo $this->post->getId(); ?>" />
+			<input type="file" name="image" />
+			<input type="submit" value="Carica Immagine" name="upload" /> 
+		</div>
+	</form>
+</fieldset>
+	
+<div class="preview-date"><?php echo date('d F Y', $this->post->ts_creazione);?></div>
+	
+<div class="preview-content"><?php echo $this->post->profile->content;?></div>
+
+<?php echo $this->partial('footer.phtml', array('leftColum' => 'lib/left-column.phtml')); ?>

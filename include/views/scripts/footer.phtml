@@ -1,0 +1,62 @@
+            </div>
+        </div>
+
+        <div id="left-container" class="column">
+        	<div class="box" id="search">
+        		<form method="post" action="<?php echo $this->geturl(array('controller' => 'search'));?>">
+        			<div>
+        				<input type="text" name="q" value="<?php if (isset($this->q)) { echo $this->q; } ?>" id="search-query" />
+        				<input type="submit" value="Cerca" />
+        			</div>
+        		</form>
+        	</div>
+        	<?php 
+        	if (isset($this->leftColumn)) {
+        		echo $this->render($this->leftColumn);        		
+        	} else {?>
+            <div class="box">
+                Left column placeholder
+            </div>
+            <?php } ?>
+        </div>
+
+        <div id="right-container" class="column">
+        	<?php  if (count($this->messages)> 0) {?>
+        		<div id="messages" class="box">
+        			<?php if (count($this->messages) == 1) {?>
+        				<strong>Messaggio di Stato:</strong>
+        				<?php echo $this->messages[0]; ?>
+        			<?php } else { ?>
+        				<ul>
+			        		<?php foreach ($this->messages as $message) { ?>
+			        			<li><?php echo $message; ?></li>
+			        		<?php } ?>
+		        		</ul>
+		        	<?php } ?>
+        		</div>	        		
+	        <?php } else { ?>
+	        	<div id="messages" class="box" style="display: none;"></div>
+	        <?php } ?>
+            <div class="box">
+                <?php if ($this->authenticated) { ?>
+                        <a href="<?php echo $this->geturl(array('controller' => 'account'));?>">Your Account</a>
+                        <a href="<?php echo $this->geturl(array('controller' => 'account', 'action' => 'details'));?>">Update Your Data</a>
+                    	<a href="<?php echo $this->geturl(array('controller' => 'account', 'action' => 'logout'));?>">Logout</a>
+                <?php } else { ?>
+                        <a href="<?php echo $this->geturl(array('controller' => 'account', 'action' => 'register'));?>">Register</a>
+                        <a href="<?php echo $this->geturl(array('controller' => 'account', 'action' => 'login'));?>">Login</a>
+                <?php } ?>
+            </div>
+            
+        	<?php 
+        	if (isset($this->rightColumn)) {
+        		echo $this->render($this->rightColumn);        		
+        	} 
+        	?>            
+        </div>
+
+        <div id="footer">
+            Practical PHP Web 2.0 Applications, by Quentin Zervaas.
+        </div>
+    </body>
+</html>

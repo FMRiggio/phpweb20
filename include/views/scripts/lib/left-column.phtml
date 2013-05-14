@@ -1,0 +1,26 @@
+<?php 
+$summary = $this->GetMonthlyBlogSummary(array('id_utente' => $this->id_utente));
+if (count($summary) > 0 ) {
+	
+?>	
+	<div id="preview-months" class="box">
+		<h3>Archivio del Tuo Blog</h3>
+		<ul>
+			<?php foreach ($summary as $month => $numPosts) {
+
+				?>
+				<li>
+					<a href="<?php echo $this->geturl(array('controller' => 'blogmanager'));?>?month=<?php echo $month; ?>">
+					<?php echo $month; ?>
+					</a> (<?php echo $numPosts;?> post
+					<?php if ($numPosts != 1) { echo 's'; }?>)
+				</li>
+			<?php } ?>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" src="/js/BlogMonthlySummary.class.js"></script>
+	<script type="text/javascript">
+		new BlogMonthlySummary('month-preview', 'preview-months');
+	</script>
+<?php } ?>

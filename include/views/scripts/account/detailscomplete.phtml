@@ -1,0 +1,5 @@
+<?php 
+$user = $this->user;
+echo $this->render('header.phtml'); ?>
+<p><?php echo $user->profile->nome; ?>, i tuoi dettagli sono stati aggiornati.</p>
+<?php echo $this->render('footer.phtml'); ?>

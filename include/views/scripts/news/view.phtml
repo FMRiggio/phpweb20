@@ -1,0 +1,16 @@
+<?php echo $this->render('header.phtml'); ?>
+<div class="news">
+	<div class="autore">di <?php echo $this->escape($this->news['autore']) ?> | <?php echo $this->escape($this->news['data']) ?></div>
+	<div class="modifica">
+		<a href="<?php echo BASE_URL?>news/edit/id/<?php echo $this->escape($this->news['news_id']) ?>/">Modifica</a>
+		-
+		<a href="<?php echo BASE_URL?>news/delete/id/<?php echo $this->escape($this->news['news_id']) ?>/">Cancella</a>
+	</div>
+	<div class="testo">
+		<?php echo nl2br($this->escape($this->news['testo_intro'])) ?>
+		<br />
+		<?php echo nl2br($this->escape($this->news['testo_completo'])) ?>
+	</div>
+</div>
+<a href="<?php echo BASE_URL?>">&lt;&lt; Indietro</a>
+<?php echo $this->render('footer.phtml'); ?>

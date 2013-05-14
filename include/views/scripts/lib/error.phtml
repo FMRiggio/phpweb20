@@ -1,0 +1,40 @@
+<?php
+$error = $this->error;
+$chiave = $this->chiave;
+
+//controllo se error è un array
+
+if (is_array($error)) {
+	
+	//conto la lunghezza dell'array
+	if (array_key_exists($chiave, $error) && count($error) > 0 )
+		$hasError = true;	
+	else
+		$hasError = false;
+		
+} else {	
+	
+	//conto la lunghezza della stringa
+	if (strlen($error) > 0) 
+		$hasError = true;
+	else 
+		$hasError = false;
+		
+}
+
+?>
+
+<div class="error" <?php if (!$hasError) { echo 'style="display:none;"'; } ?>>
+	<?php
+		if (is_array($error) && array_key_exists($chiave, $error)) {
+			echo '<ul>';
+				foreach ($error as $key => $value) {
+					if ($key == $chiave)
+						echo '<li><strong>' . $value . '</strong></li>';
+				}
+			echo '</ul>';			
+		}else
+			echo '<strong>' . $error . '</strong>';
+	?>
+</div>
+	

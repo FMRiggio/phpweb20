@@ -1,0 +1,24 @@
+<?php 
+$username = $this->username;
+$urlPost = $this->post->url;
+$url = $this->geturl(array('url' => $urlPost, 'username' => $username, 'route' => 'post'));
+$post = $this->post;
+
+?>
+
+<div class="teaser">
+	<h3>
+		<a href="<?php echo $url; ?>" class="entry-title" rel="bookmark"><?php echo $this->post->profile->title; ?></a>
+	</h3>
+
+	<div class="teaser-date"><?php echo date('D,j M', $post->ts_creazione); ?></div>
+	
+	<div class="teaser-content summary">
+		<?php echo $post->getTeaser(500); ?>
+	</div>
+	
+	<div class="teaser-links">
+		<a href="<?php echo $url; ?>">Leggi ancora...</a>
+	</div>
+
+</div>

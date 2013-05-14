@@ -1,0 +1,53 @@
+<?php 
+$fp = $this->fp;
+echo $this->render('header.phtml'); 
+
+?>
+
+<form method="post" action="<?php echo $this->geturl(array('controller' => 'blogmanager', 'action' => 'edit'));?>" id="<?php echo $fp->post->id_post; ?>">
+	
+	<div class="error" <?php if (!$fp->hasError()) { echo 'style="display:none;"'; } ?>>
+		Si è verificato un errore nel form sottostante.<br/>
+		Si prega di verificare i campi evidenziati e di reinviare il form.
+	</div>
+	
+<fieldset>
+	<legend>Creare un post</legend>
+	
+	<div class="row" id="form_title_container">
+		<label for="form_title">Titolo:</label>
+		<input type="text" id="form_title" name="title" value="<?php echo $fp->title; ?>" />
+		<?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('title'))); ?>
+	</div>
+	
+    <div class="row" id="form_date_container">
+        <label for="form_date">Date di ingresso:</label>
+		<input type="text" id="form_date" name="ts_creazione" value="<?php echo $fp->ts_creazione;?>" />
+    	<?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('ts_creazione'))); ?>
+    </div>
+
+    <div class="row" id="form_content_container">
+        <label for="form_content">Tuo Post:</label>
+        <?php echo $this->wysiwyg(array('name' => 'content', 'value' => $fp->content)); ?>
+        <?php echo $this->partial('lib/error.phtml', array('error' => $this->fp->getError('content'))); ?>
+    </div>
+	
+</fieldset>
+
+<div class="submit">
+	<?php 
+	if ($fp->post->isLive()) {
+		$label = 'Save Changes';
+	} elseif ($fp->post->isSaved()) {
+		$label = 'Save Changes and Send Live';
+	} else {
+		$label = 'Create and Send Live';
+	}
+	?>
+    <input type="submit" value="<?php echo $label; ?>" />
+    <?php if (!$fp->post->isLive()) { ?>
+        <input type="submit" name="preview" value="Preview This Post" />
+    <?php } ?>
+</div>
+
+<?php echo $this->partial('footer.phtml', array('leftColum' => 'lib/left-column.phtml')); ?>

@@ -1,0 +1,16 @@
+<?php echo $this->render('header.phtml'); ?>
+<?php 
+if (count($this->posts) == 0) {?>
+	<p>Nessun post del blog è stato trovato!</p>
+<?php } else { 
+		
+		foreach ($this->posts as $post) {
+			$idUtente = $post->id_utente;	
+			echo $this->partial('user/lib/blog-post-summary.phtml', array(
+																	'user' 		 => $this->users[$idUtente],
+																	'post' 		 => $post,
+																	'linkToBlog' => true));
+	 		
+	 }
+} ?>
+<?php echo $this->render('footer.phtml'); ?>

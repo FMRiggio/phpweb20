@@ -1,0 +1,37 @@
+<?php 
+$username = $this->user->username;
+$urlPost = $this->post->url;
+$url = $this->geturl(array('url' => $urlPost, 'username' => $username, 'route' => 'post'));
+$post = $this->post;
+
+?>
+
+<div class="teaser">
+	<h3>
+		<a href="<?php echo $url; ?>" class="entry-title" rel="bookmark"><?php echo $this->post->profile->title; ?></a>
+	</h3>
+
+	<div class="teaser-date"><?php echo date('D,j M', $post->ts_creazione); ?></div>
+	
+	<?php 
+	if (count($post->images) > 0) {
+		$image = current($post->images);
+		echo '<div class="teaser-image">';
+			echo '<a href="' . $url. '">';
+			echo '<img src="' . $this->ImageFileName(array('id' => $image->getId(), 'w' => 100)) . '" alt="" />';
+			echo '</a>';
+		echo '</div>';
+	} 
+	?>
+	<div class="teaser-content summary">
+		<?php echo $post->getTeaser(500); ?>
+	</div>
+	
+	<div class="teaser-links">
+		<a href="<?php echo $url; ?>">Leggi ancora...</a>
+		<?php if ($this->linkToBlog) {  ?>
+			| <a href="<?php $this->geturl(array('username' => $this->user->username, 'route' => 'user'));?>">Pubblicato da <?php echo $this->user->username;?></a>
+		<?php } ?>
+	</div>
+
+</div>

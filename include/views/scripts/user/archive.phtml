@@ -1,0 +1,21 @@
+<?php 
+echo $this->render('header.phtml'); 
+
+if (count($this->posts) == 0) {?>
+	<p>Nessun post del blog trovato per questo utente.</p>
+<?php } else { ?>
+	<dl>
+		<?php 
+			
+			foreach ($this->posts as $post) {
+				echo $this->partial('/user/lib/blog-post-summary.phtml', array('user' => $this->user,
+																			   'post' => $post));
+			}
+		?>
+	</dl>
+<?php 
+	echo $this->partial('footer.phtml', array('user'    => $this->user, 
+											  'leftColumn'  => 'user/lib/left-column.phtml',
+											  'rightColumn' => 'user/lib/right-column.phtml')); 
+}
+?>

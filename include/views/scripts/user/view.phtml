@@ -1,0 +1,62 @@
+<?php echo $this->partial('header.phtml', array('lightbox' => true, 'maps' => $this->post->luoghi, 'config' => $this->config)); ?>
+
+<div id="post-tag">
+	<strong>Tag:</strong>
+	<?php 
+	$i = 0;
+	if (count($this->post->getTags()) > 0) {
+		foreach ($this->post->getTags() as $tag => $arrTag) {
+			echo '<a href="';
+			echo $this->geturl(array('route' 	=> 'tagspace', 
+									 'username' => $this->user->username,
+									 'tag' 		=> $arrTag));
+			echo '" rel="tag">' . $arrTag . '</a>';
+			if ($i != count($this->post->getTags())) echo ',';
+			$i++;
+		}
+	} else {
+		echo '(none)';
+	}
+	?>
+</div>
+<div class="post-date"><?php echo date('d F Y', $this->post->ts_creazione); ?></div>
+
+<?php foreach ($this->post->images as $image) {?>
+	<div class="post-image">
+		<a href="<?php echo $this->ImageFileName(array('id' => $image->getId(), 'w' => 600));?>" rel="lightbox[blog]">
+			<img src="<?php echo $this->ImageFileName(array('id' => $image->getId(), 'w' => 100));?>" />
+		</a>
+	</div>
+<?php } ?>
+
+<div class="post-content"><?php echo $this->post->profile->content; ?></div>
+
+<?php
+
+if (count($this->post->luoghi) > 0) {
+?>
+<div id="post-locations">
+	<h2>Luoghi</h2>
+	
+	<ul>
+	<?php foreach ($this->post->luoghi as $location) {?>
+		<li>
+			<abbr class="geo" title="<?php echo $location->latitudine;?>;<?php echo $location->longitudine;?>"><?php echo $location->descrizione;?></abbr>
+		</li>
+	<?php } ?>
+	</ul>
+	
+	<div class="map"></div>
+</div>
+
+<script type="text/javascript" src="/js/BlogLocations.class.js"></script>
+<script type="text/javascript">
+	new BlogLocations('post-locations');
+</script>
+<?php 
+}
+
+echo $this->partial('footer.phtml', array('user'		=> $this->user,
+										  'leftColumn'  => '/user/lib/left-column.phtml', 
+										  'rightColumn' => '/user/lib/right-column.phtml')); 
+?> 

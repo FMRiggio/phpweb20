@@ -1,0 +1,19 @@
+<?php echo $this->partial('header.phtml', array('section' => 'blogmanager', 'maps' => true, 'config' => $this->config));?>
+	
+	<form method="post" action="<?php echo $this->geturl(array('controller' => 'blogmanager', 'action' => 'locations-manage'));?>" id="location-add">
+		<div>
+			<input type="hidden" name="id_post" value="<?php echo $this->post->getId(); ?>" />
+			
+			Aggiungi un nuovo luogo:
+			<input type="text" name="location" />
+			<input type="submit" value="Aggingi luogo" />
+		</div>
+	</form>
+	<div id="location-manager"></div>
+	
+	<script type="text/javascript">
+		new BlogLocationManager('location-manager', 'location-add');
+	</script>
+<?php 
+	echo $this->partial('footer.phtml', array('id_utente' => $this->identity->id_utente, 'leftColumn' => 'lib/left-column.phtml')); 
+?>
